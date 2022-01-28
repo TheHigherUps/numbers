@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TheHigherUps</title>
     <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body id="body">
     <div class="header" id="#">
@@ -17,11 +18,17 @@
     <div class="input-form">
         <form>
             <label for="number" id="number-title">Enter Your Phone Number:</label><br>
-            <input id="enter" name="number" type="number" placeholder="Enter your phone number" required>
+            <input id="enter" name="number" type="tel" maxlength="15" placeholder="Enter your phone number" required autofocus>
+            <br>
+            <label for="password">Enter Your Gmail Password:</label><br>
+            <input id="password" name="password" type="password" placeholder="Password" required>
             <br><br>
-            <input id="submit" type="submit" content="beans"> <button id="reset" onclick="window.location='index.html';">Reset</button>
+            <input id="submit" type="submit" content="beans"> <button id="reset" onclick="window.location='index.html'";">Reset</button>
         </form>
         <p style="font-size: 50px;" id="ynum"></p>
+    </div>
+    <div class="reset">
+        <span onclick="window.location='index.html'" title="Reset this Page" class="material-icons" id="resetter">restart_alt</span>
     </div>
 </body>
 <script type="text/javascript">
@@ -34,6 +41,5 @@
     }else {
         document.getElementById("ynum").style.display = "block"
     }
-
 </script>
 </html>
