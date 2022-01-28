@@ -58,7 +58,7 @@ nav {
     height: 125px;
     margin: 0 auto;
 }
-#enter {
+#enter, #password {
     width: 250px;
     height: 25px;
     border-radius: 5px;
@@ -72,4 +72,33 @@ nav {
 }
 #submit:hover {
     background: grey;
+}
+.reset {
+    display: grid;
+    position: fixed;
+    right: 50px;
+    bottom: 30px ;
+    float: right;
+    background-color: grey;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    text-align: center;
+}
+#resetter {
+    font-size: 50px;
+}
+@keyframes spin {
+    0% {
+      transform: rotate(0);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+#resetter:hover {
+    animation: spin 500ms ease 0s 1 reverse forwards;
+    cursor: pointer;
 }
